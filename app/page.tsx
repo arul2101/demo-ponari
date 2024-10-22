@@ -4,11 +4,11 @@ import Navbar from '@/components/Navbar';
 import Providers from '@/components/Providers';
 import React, { FC } from 'react'
 
-interface homeProps {
-  children: React.ReactNode
-}
+// interface homeProps {
+//   children: React.ReactNode
+// }
 
-const Home: FC<homeProps> = ({ }) => {
+const Home: FC = ({ }) => {
   return (
     <>
       <Navbar />
