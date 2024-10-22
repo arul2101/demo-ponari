@@ -1,6 +1,7 @@
 import React, { FC } from 'react'
 import ImageHero from '@/public/img/hero_image.jpg';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const Jumbotron: FC = ({ }) => {
   return (
@@ -13,8 +14,8 @@ const Jumbotron: FC = ({ }) => {
           <p className='text-[18px] w-[430px]'>Ponari provides progressive, and affordable healthcare, accessible on mobile and online for everyone</p>
 
           <div className='flex gap-[8px]'>
-            <button className='h-[48px] w-[128px] bg-black text-white'>Get Started</button>
-            <button className='h-[48px] w-[128px] border border-black'>Learn More</button>
+            <Link href="/" className='h-[48px] w-[128px] bg-black text-white flex items-center justify-center hover:bg-opacity-80 transition-all'>Get Started</Link>
+            <Link href="/" className='h-[48px] w-[128px] border border-black flex items-center justify-center hover:bg-slate-50 transition-all'>Learn More</Link>
           </div>
         </div>
 

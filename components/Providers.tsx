@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import React, { FC } from 'react'
 import ProvidersImage from '@/public/img/providers.jpg';
+import Link from 'next/link';
 
 
 const Providers: FC = ({ }) => {
@@ -11,7 +12,7 @@ const Providers: FC = ({ }) => {
         <p className='text-[18px]'>Ponari provides progressive, and affordable healthcare, accessible on mobile and online for everyone. To us, it’s not just work. We take pride in the solutions we deliver</p>
         <div className='flex flex-col justify-center items-center'>
 
-          <button className='w-[129px] h-[48px] border border-black'>Learn more</button>
+          <Link href="/" className='w-[129px] h-[48px] border border-black flex items-center justify-center hover:bg-slate-50 transition-all'>Learn more</Link>
         </div>
       </div>
 
