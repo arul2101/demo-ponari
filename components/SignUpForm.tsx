@@ -52,7 +52,7 @@ const SignUpForm: FC = ({ }) => {
           </div>
         </div>
 
-        <button className='w-full h-[48px] bg-black text-white hover:bg-opacity-80 transition-all'>Log In</button>
+        <button className='w-full h-[48px] bg-black text-white hover:bg-opacity-80 transition-all'>Sign Up</button>
       </form>
     </section>
   )
