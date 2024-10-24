@@ -27,7 +27,7 @@ const InputPrescription: FC<InputPrescriptionProps> = ({
           />
         </div>
 
-        <div>
+        <div className="relative">
           <label htmlFor="" className="text-[12px] text-[#00000099]">
             Dose
           </label>
@@ -35,16 +35,20 @@ const InputPrescription: FC<InputPrescriptionProps> = ({
             type="number"
             className="border-b border-[#0000006B] w-[119px] focus:outline-none"
           />
+          <span className="text-[#00000061] absolute right-0 text-[14px]">mg</span>
         </div>
 
-        <div>
+        <div className="relative">
           <label htmlFor="" className="text-[12px] text-[#00000099]">
             Schedule
           </label>
           <input
             type="number"
             className="border-b border-[#0000006B] w-[119px] focus:outline-none"
+            min={1}
+            max={99}
           />
+          <span className="text-[#00000061] absolute right-0 text-[14px]">times a day</span>
         </div>
 
         <div

@@ -1,4 +1,5 @@
 import React, { FC } from "react";
+import ButtonSaveForm from "../ButtonSaveForm";
 
 type DiagnoseFormProps = {
   onSelectedForm: React.Dispatch<React.SetStateAction<number>>;
@@ -72,9 +73,7 @@ const DiagnoseForm: FC<DiagnoseFormProps> = ({ onSelectedForm }) => {
               />
             </div>
 
-            <button className="w-full h-[48px] bg-black text-white hover:bg-opacity-80 transition-all mt-8">
-              Save
-            </button>
+            <ButtonSaveForm />
           </div>
         </div>
       </section>

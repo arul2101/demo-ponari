@@ -3,6 +3,7 @@
 import React, { FC, useState } from "react";
 import InputPrescription from "./InputPrescription";
 import Each from "@/utils/Each";
+import ButtonSaveForm from "../ButtonSaveForm";
 
 type PrescriptionFormProps = {
   onSelectedForm: React.Dispatch<React.SetStateAction<number>>;
@@ -99,9 +100,7 @@ const PrescriptionForm: FC<PrescriptionFormProps> = ({ onSelectedForm }) => {
               ADD
             </button>
 
-            <button className="w-full h-[48px] bg-black text-white hover:bg-opacity-80 transition-all mt-8">
-              Save
-            </button>
+            <ButtonSaveForm />
           </div>
         </div>
       </section>
