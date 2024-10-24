@@ -1,10 +1,10 @@
 import React, { FC } from 'react'
 
-interface HeaderSelecterTabProps {
+interface HeaderSelectedTabProps {
   selectedTab: number;
 }
 
-const HeaderSelecterTab: FC<HeaderSelecterTabProps> = ({ selectedTab }) => {
+const HeaderSelectedTab: FC<HeaderSelectedTabProps> = ({ selectedTab }) => {
   return (
     <div className="border-b border-[#BFBFBF] py-4 px-6">
       <h2>
@@ -14,4 +14,4 @@ const HeaderSelecterTab: FC<HeaderSelecterTabProps> = ({ selectedTab }) => {
   )
 }
 
-export default HeaderSelecterTab;
+export default HeaderSelectedTab;

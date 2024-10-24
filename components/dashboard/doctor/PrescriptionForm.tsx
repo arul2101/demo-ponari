@@ -4,6 +4,7 @@ import React, { FC, useState } from "react";
 import InputPrescription from "./InputPrescription";
 import Each from "@/utils/Each";
 import ButtonSaveForm from "../ButtonSaveForm";
+import Overlay from "@/utils/Overlay";
 
 type PrescriptionFormProps = {
   onSelectedForm: React.Dispatch<React.SetStateAction<number>>;
@@ -27,7 +28,7 @@ const PrescriptionForm: FC<PrescriptionFormProps> = ({ onSelectedForm }) => {
   console.log(countInput);
   return (
     <>
-      <div className="fixed top-0 left-0 h-screen w-screen bg-black bg-opacity-40 z-25 no-doc-scroll"></div>
+      <Overlay />
 
       <section className="fixed top-0 left-0 w-screen h-screen flex justify-center items-center">
         <div className="relative h-[629px] w-[570px] bg-white rounded-[20px] p-10 overflow-y-scroll">

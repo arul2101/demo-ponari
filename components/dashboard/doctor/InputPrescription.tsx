@@ -16,7 +16,7 @@ const InputPrescription: FC<InputPrescriptionProps> = ({
 }) => {
   return (
     <section className="mb-4">
-      <div className="flex justify-around gap-2 items-center">
+      <div className="flex justify-between gap-2 items-center">
         <div>
           <label htmlFor="" className="text-[12px] text-[#00000099]">
             Medicine
@@ -45,8 +45,6 @@ const InputPrescription: FC<InputPrescriptionProps> = ({
           <input
             type="number"
             className="border-b border-[#0000006B] w-[119px] focus:outline-none"
-            min={1}
-            max={99}
           />
           <span className="text-[#00000061] absolute right-0 text-[14px]">times a day</span>
         </div>

@@ -3,9 +3,9 @@ import React, { FC } from "react";
 
 const LastPatient: FC = () => {
   return (
-    <div className="py-6 px-8 space-y-8">
+    <div className="py-6 px-8 space-y-8 h-full overflow-y-scroll overflow-x-hidden">
       <Each
-        of={[1, 2, 3]}
+        of={[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]}
         render={(item) => (
           <div
             key={item}

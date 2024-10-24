@@ -1,6 +1,11 @@
 import React, { FC } from 'react'
 
-const AvatarProfileCard: FC = () => {
+type AvatarProfileCardProps = {
+  name: string;
+  email: string;
+}
+
+const AvatarProfileCard: FC<AvatarProfileCardProps> = ({ name, email }) => {
   return (
     <div className="bg-white h-[402px] w-[360px] rounded-[12px] flex flex-col items-center pt-10">
       <div>
@@ -28,10 +33,8 @@ const AvatarProfileCard: FC = () => {
           />
         </svg>
       </div>
-      <h2 className="mt-6 text-[14px] font-bold">Dr. Adam H.</h2>
-      <p className="text-[#505050] text-[10px] font-light">
-        adamh@email.com
-      </p>
+      <h2 className="mt-6 text-[14px] font-bold">{name}</h2>
+      <p className="text-[#505050] text-[10px] font-light">{email}</p>
     </div>
   )
 }

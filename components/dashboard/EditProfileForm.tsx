@@ -1,5 +1,6 @@
 import React, { FC } from 'react'
 import ButtonSaveForm from './ButtonSaveForm';
+import Overlay from '@/utils/Overlay';
 
 type EditProfileFormProps = {
   onEditProfile: React.Dispatch<React.SetStateAction<boolean>>;
@@ -7,7 +8,9 @@ type EditProfileFormProps = {
 
 const EditProfileForm: FC<EditProfileFormProps> = ({ onEditProfile }) => {
   return (
-    <div className="fixed top-0 left-0 h-screen w-screen bg-black bg-opacity-40 z-25 no-doc-scroll">
+    <>
+      {/* w-screen h-screen flex justify-center items-center */}
+      <Overlay />
       <section className="fixed top-0 left-0 w-screen h-screen flex justify-center items-center">
         <div className="relative h-[620px] w-[570px] bg-white rounded-[20px] p-10">
           <div
@@ -117,7 +120,7 @@ const EditProfileForm: FC<EditProfileFormProps> = ({ onEditProfile }) => {
           <ButtonSaveForm />
         </div>
       </section>
-    </div>
+    </>
   )
 }
 
