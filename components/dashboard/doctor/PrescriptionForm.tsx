@@ -53,15 +53,6 @@ const PrescriptionForm: FC<PrescriptionFormProps> = ({ onSelectedForm }) => {
           </h2>
 
           <div className="">
-            {/* {countInput.map((input) => (
-              <InputPrescription
-                key={input.id}
-                id={input.id}
-                beforeMeals={input.name[0]}
-                afterMeals={input.name[1]}
-                onCountInput={setCountInput}
-              />
-            ))} */}
             <Each
               of={countInput}
               render={(input) => (
