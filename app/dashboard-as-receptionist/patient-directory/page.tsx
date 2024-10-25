@@ -1,10 +1,10 @@
-import HomepageDashboard from "@/components/dashboard/receptionist/HomepageDashboard";
+import PatientDirectory from "@/components/dashboard/receptionist/PatientDirectory";
 import React, { FC } from "react";
 
 const page: FC = () => {
   return (
     <>
-      <HomepageDashboard />
+      <PatientDirectory />
     </>
   );
 };

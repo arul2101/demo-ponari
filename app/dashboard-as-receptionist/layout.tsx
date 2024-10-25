@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 const roboto = Roboto({
   weight: ["400", "500", "700"],
@@ -54,6 +55,7 @@ export default function DashboardReceptionistLayout({
       <body className={`${roboto.className}} antialiased`}>
         <Navbar rightSide={sidebarNav} />
         {children}
+        <Footer />
       </body>
     </html>
   );

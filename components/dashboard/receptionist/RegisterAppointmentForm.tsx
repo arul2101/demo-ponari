@@ -2,7 +2,7 @@ import React, { FC } from "react";
 
 const RegisterAppointmentForm: FC = () => {
   return (
-    <section className="max-w-[1310px] mx-auto">
+    <section className="max-w-[1310px] mx-auto py-6">
       <div className="flex justify-center mt-6 items-center gap-4">
         <svg
           width="38"
@@ -25,17 +25,74 @@ const RegisterAppointmentForm: FC = () => {
         <input
           type="text"
           placeholder="Enter patient name"
-          className="border-[#b3b3b1] border-[2px] rounded-[20px] w-[1313px] h-[91px] focus:text-[32px] placeholder:text-[32px]"
+          className="border-[#b3b3b1] border-[2px] rounded-[20px] w-[1313px] h-[91px] focus:text-[32px] placeholder:text-[32px] px-4 focus:outline-none"
         />
       </div>
 
-      <div>
-        <h2 className="text-[32px] font-bold">Patient Nama</h2>
+      <div className="mt-8">
+        <h2 className="text-[32px] font-bold">Patient ID/NIK</h2>
         <input
           type="text"
-          placeholder="Enter patient name"
-          className="border-[#b3b3b1] border-[2px] p-4 rounded-[20px] w-[1313px] h-[91px] focus:text-[32px]"
+          placeholder="Enter patient ID or NIK"
+          className="border-[#b3b3b1] border-[2px] rounded-[20px] w-[1313px] h-[91px] focus:text-[32px] placeholder:text-[32px] px-4 focus:outline-none"
         />
+      </div>
+
+      <div className="mt-8">
+        <h2 className="text-[32px] font-bold">Select Doctor</h2>
+        <select
+          name="cars"
+          id="cars"
+          className="border-[#b3b3b1] border-[2px] rounded-[20px] w-[1313px] h-[91px] focus:text-[32px] text-[32px] px-4 focus:outline-none"
+        >
+          <option value="volvo">Volvo</option>
+          <option value="saab">Saab</option>
+          <option value="mercedes">Mercedes</option>
+          <option value="audi">Audi</option>
+        </select>
+      </div>
+
+      <div className="mt-8 flex justify-between items-center">
+        <div>
+          <h2 className="text-[32px] font-bold">Appointment Date</h2>
+
+          <input
+            type="date"
+            placeholder="Enter patient name"
+            className="border-[#b3b3b1] border-[2px] rounded-[20px] w-[643px] h-[91px] focus:text-[32px] text-[32px] px-4 focus:outline-none"
+          />
+        </div>
+
+        <div>
+          <h2 className="text-[32px] font-bold">Appointment Time</h2>
+
+          <select
+            name="cars"
+            id="cars"
+            className="border-[#b3b3b1] border-[2px] rounded-[20px] w-[643px] h-[91px] focus:text-[32px] text-[32px] px-4 focus:outline-none"
+          >
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option>
+          </select>
+        </div>
+      </div>
+
+      <div className="mt-8">
+        <h2 className="text-[32px] font-bold">Notes</h2>
+        <textarea
+          name=""
+          id=""
+          placeholder="Add any additional notes"
+          className="w-[1313px] h-[248px] border-[#b3b3b1] border-[2px] rounded-[20px] focus:outline-none focus:text-[32px] text-[32px] p-4 resize-none"
+        ></textarea>
+      </div>
+
+      <div className="flex justify-center items-center mt-8">
+        <button className="bg-black w-[480px] h-[80px] text-white rounded-[20px]">
+          Save
+        </button>
       </div>
     </section>
   );

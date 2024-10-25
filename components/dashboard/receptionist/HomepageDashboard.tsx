@@ -68,22 +68,34 @@ const HomepageDashboard: FC = () => {
         </div>
 
         <div className="w-[1312px] mt-4">
-          <div className="mb-8 space-x-16">
-            <button className="w-[532px] h-[84px] border border-[#b3b3b1] rounded-[20px] text-[32px] bg-white">
+          <div className="flex items-center gap-9">
+            <Link
+              href="/dashboard-as-receptionist/schedule-appointment"
+              className="flex justify-center items-center w-[532px] h-[84px] border border-[#b3b3b1] rounded-[20px] text-[32px] bg-white"
+            >
               Schedule Appointment
-            </button>
-            <button className="w-[532px] h-[84px] border border-[#b3b3b1] rounded-[20px] text-[32px] bg-white">
+            </Link>
+            <Link
+              href="/dashboard-as-receptionist/view-schedule"
+              className="flex justify-center items-center w-[532px] h-[84px] border border-[#b3b3b1] rounded-[20px] text-[32px] bg-white"
+            >
               View Schedule
-            </button>
+            </Link>
           </div>
 
-          <div className="space-x-16">
-            <button className="w-[532px] h-[84px] border border-[#b3b3b1] rounded-[20px] text-[32px] bg-white mb-8">
+          <div className="flex items-center gap-9 mt-8">
+            <Link
+              href="/dashboard-as-receptionist/contact-doctor"
+              className="flex justify-center items-center w-[532px] h-[84px] border border-[#b3b3b1] rounded-[20px] text-[32px] bg-white"
+            >
               Contact Doctor
-            </button>
-            <button className="w-[532px] h-[84px] border border-[#b3b3b1] rounded-[20px] text-[32px] bg-white">
+            </Link>
+            <Link
+              href="/dashboard-as-receptionist/patient-directory"
+              className="flex justify-center items-center w-[532px] h-[84px] border border-[#b3b3b1] rounded-[20px] text-[32px] bg-white"
+            >
               Patient Directory
-            </button>
+            </Link>
           </div>
         </div>
       </div>
