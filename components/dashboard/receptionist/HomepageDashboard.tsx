@@ -70,7 +70,7 @@ const HomepageDashboard: FC = () => {
         <div className="w-[1312px] mt-4">
           <div className="flex items-center gap-9">
             <Link
-              href="/dashboard-as-receptionist/schedule-appointment"
+              href="/dashboard-as-receptionist/register-new-appointment"
               className="flex justify-center items-center w-[532px] h-[84px] border border-[#b3b3b1] rounded-[20px] text-[32px] bg-white"
             >
               Schedule Appointment
